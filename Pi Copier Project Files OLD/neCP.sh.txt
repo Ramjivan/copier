@@ -1,0 +1,15 @@
+#!/bin/bash
+
+fileItemString=$(cat  files.txt |tr "\n" " ")
+
+files=($fileItemString)
+
+
+for files in ${files[@]} 
+do
+
+temp+=$files
+cp -r "$temp" "$1" 
+done
+
+exit 0

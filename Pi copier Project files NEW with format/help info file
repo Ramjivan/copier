@@ -1,0 +1,10 @@
+#to launch ab.py at autostart 
+#sudo nano /hpme/pi/.bashrc
+#call ab.py at the end
+
+#launch gui programe at startup
+cd /home/pi/.config/lxsession/LXDE-pi/
+nano autostart
+
+add this line - 
+@lxterminal -e python3 /home/pi/USBcopier.py
